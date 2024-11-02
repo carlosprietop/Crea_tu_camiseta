@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diseño Camiseta</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <h1>DISEÑA TU CAMISETA</h1>
+    <div>
+      <label for="titulo">Titulo</label>
+      <input type="text" name="titulo" id="input_titulo" />
+    </div>
+
+    <div>
+      <label>Posicion X</label>
+      <input
+        type="range"
+        name="rangoX"
+        id="posicionX"
+        min="0"
+        max="100"
+        value="0"
+      />
+      <label>Posicion Y</label>
+      <input
+        type="range"
+        name="rangoY"
+        id="posicionY"
+        min="0"
+        max="100"
+        value="0"
+      /><br /><br />
+    </div>
+
+    <div>
+      <h3>Elige el color de la camiseta</h3>
+      <label for="blanco">White</label>
+      <input type="radio" name="color" id="radio_blanco" value="blanco" />
+      <br />
+      <label for="negro">Black</label>
+      <input type="radio" name="color" id="radio_negro" value="negro" checked />
+    </div>
+
+    <div id="contenedor_principal">
+      <div id="contenedor_imagenes">
+        <h3>ARRASTRA UNA IMAGEN A LA CAMISETA</h3>
+        <img src="img/pngegg (1).png" class="imagen_camiseta" id="GOKU" />
+        <img
+          src="img/supersayan.png"
+          class="imagen_camiseta"
+          id="SUPERSAIYAN"
+        />
+        <img src="img/pngegg (3).png" class="imagen_camiseta" id="PICCOLO" />
+        <img src="img/pngegg.png" class="imagen_camiseta" id="VEGETA" />
+      </div>
+
+      <div id="contenedor_camiseta">
+        <div id="titulo_logo">
+          <div id="div_titulo">
+            <p id="parrafo_titulo">Titulo</p>
+          </div>
+          <div id="div_logo"></div>
+        </div>
+        <div id="imagen_texto">
+          <div id="imagen_grande">
+            <h4 id="parrafo1">ARRASTRA AQUI TU IMAGEN</h4>
+          </div>
+
+          <div id="texto_imagen">
+            <h3 id="titulo_imagen">TEXTO IMAGEN</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

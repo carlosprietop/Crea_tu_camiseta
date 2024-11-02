@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+#contenedor_principal {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+input[type="text"],
+input[type="range"] {
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+#contenedor_camiseta {
+  width: 40%;
+  height: 600px;
+  position: relative;
+  background-image: url(img/black.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.imagen_camiseta {
+  width: 50px;
+}
+
+#contenedor_imagenes {
+  width: 30%;
+  height: 450px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#titulo_logo {
+  width: 250px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-top: 180px;
+  margin-left: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#div_titulo {
+  color: white;
+}
+
+#imagen_texto {
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  margin-left: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+#imagen_grande,
+#texto_imagen p {
+  color: rgb(6, 116, 212);
+}
+
+#texto_imagen {
+  text-align: center;
+  color: rgb(9, 95, 160);
+}
+
+#imagen_grande {
+  height: 250px;
+  display: flex;
+}
+
+.rotarImagen {
+  transform: scaleX(-1);
+}
+#parrafo_titulo {
+  position: relative;
+}
